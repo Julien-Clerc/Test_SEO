@@ -1,3 +1,2 @@
-* All ROBOTS
-useragent: *
-Disallow: 
+User-agent: *
+Allow: /
