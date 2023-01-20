@@ -52,3 +52,7 @@ a:hover {
     background-color: rgb(153, 0, 255) ;
     transform: scaleX(5px);
 }
+
+a img {
+    width: 50px;
+}
