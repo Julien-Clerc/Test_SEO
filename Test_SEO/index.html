@@ -26,9 +26,11 @@
     <meta name="reddit:image" content="ressources/Cyberpunk2077-madame.webp">
 
     <!-- Font de la partage -->
+    <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
     
     <!-- Json LD -->
     <script type="application/ld+json">
@@ -48,7 +50,7 @@
 
 <body>
     <header class="navbar">
-        <img src="ressources/Cyberpunk2077-Logo.webp" alt="Logo Cyberpunk">
+        <img src="ressources/Cyberpunk2077-Logo.webp" class="logoSesMorts" alt="Logo Cyberpunk">
         <nav class="navbar-container">
             <ul>
                 <li><a href="#">Lorem</a></li>
@@ -62,7 +64,7 @@
 
     <main>
         <section id="banner">
-            <video controls autoplay>
+            <video controls autoplay preload="auto">
                 <source src="ressources/Cyberpunk2077-vidéo.webm" type="video/webm" alt="Vidéo d'une femme Cyberpunk" >
             </video>
             <h1>Explorez le monde futuriste de Cyberpunk 2077</h1>
@@ -134,9 +136,9 @@
                 découvrir de nouvelles œuvres, de participer à des discussions sur le genre cyberpunk et de rester
                 informé des dernières nouvelles et des annonces liées à ce dernier.
             </p>
-            <a href="facebook.com" target="_blank"><img src="ressources/facebook-icon.svg" alt="Icone Facebook" /></a>
-            <a href="twiter.com" target="_blank"><img src="ressources/twitter-icon.svg" alt="Icone Twitter" /></a>
-            <a href="reddit.com" target="_blank"><img src="ressources/reddit-icon.svg" alt="Icone Reddit" /></a>
+            <a href="https://fr-fr.facebook.com/Cyberpunk2077FR/" target="_blank"><img src="ressources/facebook-icon.svg" alt="Icone Facebook" /></a>
+            <a href="https://twitter.com/CyberpunkGame?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="ressources/twitter-icon.svg" alt="Icone Twitter" /></a>
+            <a href="https://www.reddit.com/r/cyberpunkgame/" target="_blank"><img src="ressources/reddit-icon.svg" alt="Icone Reddit" /></a>
 
             <button><a href="#">En savoir +</a></button>
         </section>
@@ -163,18 +165,21 @@
         <section>
             <form action="">
                 <label for="civilité">Civilité</label>
-                <select name="Sex" size="1" id="">
+                <select name="civilité" size="1" id="civilité">
                     <option value="Madame">Madame</option>
                     <option value="Monsieur">Monsieur</option>
                 </select>
                 <br />
                 <label for="Name">Nom</label>
-                <input type="text" name="Name" required>
+                <input type="text" name="Name" id="Name" required>
                 <br />
-                <textarea name="commentaire" id="" cols="100" rows="3"></textarea>
+                <label for="commentaire"></label>
+                <textarea name="commentaire" id="commentaire" cols="100" rows="3"></textarea>
                 <br />
-                <input type="submit" name="envoyer" value="ENVOYER">
-                <input type="submit" name="reset" value="RESET">
+                <label for="envoyer"></label>
+                <input type="submit" name="envoyer" id="envoyer" value="ENVOYER">
+                <label for="reset"></label>
+                <input type="submit" name="reset" id="reset" value="RESET">
             </form>
         </section>
     </main>
